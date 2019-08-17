@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 # make errors look better
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
+
 
 #bulma css
 gem 'bulma-rails', '~> 0.7.5'
@@ -61,7 +61,9 @@ group :development do
   # Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard', '~> 2.15'
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
 end
 
 group :test do
